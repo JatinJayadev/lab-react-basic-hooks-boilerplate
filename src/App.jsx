@@ -5,6 +5,7 @@ import Progression3 from './Components/Progression-3'
 import Progression4 from './Components/Progression-4'
 import Progression5 from './Components/Progression-5'
 import Progression6 from './Components/Progression-6'
+import Task from './Components/Task'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       {/* <Progression4 /> */}
       {/* <Progression5 /> */}
       <Progression6 />
+      <Task />
     </>
   )
 }
