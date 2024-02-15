@@ -1,11 +1,9 @@
 import { useContext } from 'react';
 import { AppContext } from './ContextProvider';
 
-function Progression6() {
+const Toggle = () => {
     const value = useContext(AppContext);
     console.log(value);
-
-
 
     return (
         <div style={{ textAlign: 'center' }}>
@@ -16,6 +14,7 @@ function Progression6() {
             </div>
         </div>
     );
-}
+    return <h1>this is toggle</h1>;
+};
 
-export default Progression6
+export default Toggle;

@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 
 export const AppContext = createContext();
 
-function AppContextProvider() {
+function AppContextProvider({ children }) {
     const [state, setState] = useState(false);
     const style = {
         backgroundColor: state == true ? 'black' : 'yellow',
@@ -11,9 +11,8 @@ function AppContextProvider() {
         textAlign: 'center',
     };
     return (
-        <AppContext.Provider
-            value={{ state: state, ContextStyle: style, setterFn: setState }}
-        >
+        <AppContext.Provider value={{ state: state, ContextStyle: style, setterFn: setState }}>
+            {children}
         </AppContext.Provider>
     );
 }
